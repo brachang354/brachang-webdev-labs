@@ -1,5 +1,6 @@
 :root {
   --purple: #800080;
+  --lavendar: #e6e6fa;
   --light-text-color: #fefefe;
 }
 
@@ -8,6 +9,14 @@ body {
 }
 
 /* Exercise 01 - Center */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--lavendar);
+}
+
 .box {
   width: 200px;
   height: 100px;
@@ -16,6 +25,10 @@ body {
   color: var(--light-text-color);
   font-size: 1.75rem;
   text-align: center;
+
+  /* Center text*/
+  display: flex;
+  align-items: center;
 }
 
 h1 {
