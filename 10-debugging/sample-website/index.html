@@ -373,7 +373,12 @@
     </div>
 
     <div class="dark-background-container">
-      <form id="RequestInfo" class="content-container form">
+      <form
+        id="RequestInfo"
+        class="content-container form"
+        action="/submit"
+        method="post"
+      >
         <h1>Tell us what you want to learn more</h1>
         <div
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
@@ -489,13 +494,14 @@
           cols="30"
           rows="10"
         ></textarea>
+
+        <div
+          class="form space-evenly-distributed-row-container form-buttons-container"
+        >
+          <input class="form-button" type="submit" value="submit" />
+          <input class="form-button" type="reset" value="reset" />
+        </div>
       </form>
-      <div
-        class="form space-evenly-distributed-row-container form-buttons-container"
-      >
-        <input class="form-button" type="submit" value="submit" />
-        <input class="form-button" type="reset" value="reset" />
-      </div>
     </div>
 
     <footer class="footer">
